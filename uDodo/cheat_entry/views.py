@@ -16,7 +16,7 @@ def home(request):
 
 def submission(request):
 
-    if request.method=="POST":
+    if (request.method=="POST"):
 
         new_form = CheatApplicationForm(request.POST)
         new_form.save()

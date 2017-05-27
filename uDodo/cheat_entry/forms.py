@@ -9,14 +9,15 @@ from django.forms.extras.widgets import SelectDateWidget
 
 import datetime
 
-class CheatApplicationForm(forms.Form):
+class CheatApplicationForm(ModelForm):
 
     name = forms.CharField(max_length=100)
     subject = forms.CharField(max_length=100)
     class_size = forms.IntegerField(required=True)
-    number_of_questions = forms.IntegerField(required=True)
+    num_q = forms.IntegerField(required=True)
     date_occurred = forms.DateField(widget=forms.SelectDateWidget)
 
     class Meta:
         model = CheatApplication
-        fields = ['name', 'subject', 'class_size', 'num_q', 'date_occurred']
+        fields = '__all__'
+        #fields = ['name', 'subject', 'class_size', 'num_q', 'date_occurred']

@@ -20,4 +20,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^cheat_entry', include('cheat_entry.urls')),
+    url(r'^home', include('home.urls')),
 ]
