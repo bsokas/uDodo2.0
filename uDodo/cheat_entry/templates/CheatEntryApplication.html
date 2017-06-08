@@ -1,9 +1,9 @@
 
-<form action="{% url 'cheat_entry:successful_post' %}" name="application" id="successful_post" method="post">
+<form action="{% url 'cheat_entry:successful_post' %}" name="form" id="successful_post" class="post-form" method="post">
 
     {% csrf_token %}
     {{ form.as_p }}
 
-    <input type="submit" value="Submit" name="submission"/>
+    <input type="submit" value="Submit" name="submission">
 
 </form>
