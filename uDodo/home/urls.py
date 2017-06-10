@@ -6,5 +6,5 @@ app_name = 'home'
 
 urlpatterns = {
 
-    url(r'^$', views.initial_view, name = "initial")
+    url(r'^$', views.index, name = "index")
 }

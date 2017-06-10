@@ -1,5 +1,5 @@
 
-<form action="{% url 'cheat_entry:successful_post' %}" name="form" id="successful_post" class="post-form" method="post">
+<form action="" name="form" id="successful_post" class="post-form" method="post">
 
     {% csrf_token %}
     {{ form.as_p }}
@@ -8,4 +8,4 @@
 
 </form>
 
-<!--<h1>Quick check to see if this is at least working...</h1>-->
+<p><a href="{% url 'entry:successful_post' %}"></a> </p>
